@@ -1,0 +1,32 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.blaze_axe"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1b,MaterialType:\"Blaze\",ToolType:\"Tools\",CustomEffects:[\"Auto_Smelting\"]}"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"enchantment.spice_in_vanilla.auto_smelting","italic":"false","color":"gray"}
+                            ]
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

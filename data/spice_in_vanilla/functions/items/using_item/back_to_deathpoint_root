@@ -1,0 +1,12 @@
+scoreboard players add @a[score_DropCount_min=1] CoolTime 1
+scoreboard players set @a[score_CoolTime_min=3] DropCount 0
+scoreboard players set @a[score_CoolTime_min=3] CoolTime 0
+scoreboard players remove @a[score_BackToDeathPoint_min=1] BackToDeathPoint 1
+scoreboard players set @a BackToDeathPoint 4 {Inventory:[{tag:{ItemID:"Back_to_DeathPoint"}}]}
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ execute @a[score_BackToDeathPoint_min=1,score_HP=0,tag=Death] ~ ~ ~ function spice_in_vanilla:items/using_item/back_to_deathpoint_reset
+
+scoreboard players tag @a[score_BackToDeathPoint_min=1,score_HP=0] add Death
+execute @a[tag=!SucceedBackToDeathPoint] ~ ~ ~ execute @s[tag=Death] ~ ~ ~ summon Armor_Stand ~ ~ ~ {Invisible:0b,Marker:1b,NoGravity:1b,Tags:["BackToDeathPoint","ItemGive"],CommandStats:{SuccessCountObjective:"SuccessCount",SuccessCountName:"@s",AffectedEntitiesObjective:"AffectedEntities",AffectedEntitiesName:"@s"}}
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ scoreboard players set @s SuccessCount 0
+scoreboard players tag @s[tag=Death] add SucceedBackToDeathPoint
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ function spice_in_vanilla:items/using_item/back_to_deathpoint

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "durability_low": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "durability": {
+                    "max": 10,
+                    "min": 0
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "spice_in_vanilla:systems/durability_low_warning"
+    }
+}

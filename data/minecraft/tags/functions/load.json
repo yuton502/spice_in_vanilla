@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "spice_in_vanilla:systems/debug_object_add",
+    "spice_in_vanilla:systems/description",
+    "spice_in_vanilla:systems/advancement_reset"
+  ]
+}

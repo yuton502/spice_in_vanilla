@@ -1,0 +1,9 @@
+give @p minecraft:iron_sword{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_sword\"}"},MaxDurability:672,Truth_MaxDurability:250,Durability:672,CustomDurability:true,MaterialType:"Ender",ToolType:"Sword"}
+give @p minecraft:iron_shovel{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_shovel\"}"},MaxDurability:672,Truth_MaxDurability:250,Durability:672,CustomDurability:true,MaterialType:"Ender",ToolType:"Tools"}
+give @p minecraft:iron_pickaxe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_pickaxe\"}"},ench:[{id:34s,lvl:1s}],MaxDurability:672,Truth_MaxDurability:250,Durability:672,CustomDurability:true,MaterialType:"Ender",ToolType:"Tools"}
+give @p minecraft:iron_axe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_axe\"}"},MaxDurability:672,Truth_MaxDurability:250,Durability:672,CustomDurability:true,MaterialType:"Ender",ToolType:"Tools"}
+give @p minecraft:iron_hoe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_hoe\"}"},MaxDurability:672,Truth_MaxDurability:250,Durability:672,CustomDurability:true,MaterialType:"Ender",ToolType:"Hoe"}
+give @p minecraft:iron_helmet{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_helmet\"}"},MaterialType:"Ender",ToolType:"Armor"}
+give @p minecraft:iron_chestplate{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_chestplate\"}"},MaterialType:"Ender",ToolType:"Armor"}
+give @p minecraft:iron_leggings{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_leggings\"}"},MaterialType:"Ender",ToolType:"Armor"}
+give @p minecraft:iron_boots{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ender_boots\"}"},MaterialType:"Ender",ToolType:"Armor"}

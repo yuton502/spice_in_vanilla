@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_flint_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_flint_helmet"], ["get_flint_chestplate"], ["get_flint_leggings"], ["get_flint_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/flint_tools/run_armor"
+    }
+}

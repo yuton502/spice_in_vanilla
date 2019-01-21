@@ -1,0 +1,1 @@
+give @s minecraft:tipped_arrow{CustomPotionEffects:[{Id:15b,Duration:1s,ShowParticles:0b,ShowIcon:0b,Amplifier:127b}],CustomPotionColor:14270037,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.torch_arrow\"}"},ItemID:"Torch_Arrow",HideFlags:32}

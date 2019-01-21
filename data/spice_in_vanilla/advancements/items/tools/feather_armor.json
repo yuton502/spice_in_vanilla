@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_feather_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Feather\"}"
+                    }
+                ]
+            }
+        },
+        "get_feather_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Feather\"}"
+                    }
+                ]
+            }
+        },
+        "get_feather_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Feather\"}"
+                    }
+                ]
+            }
+        },
+        "get_feather_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Feather\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_feather_helmet"], ["get_feather_chestplate"], ["get_feather_leggings"], ["get_feather_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/feather_tools/run_armor"
+    }
+}

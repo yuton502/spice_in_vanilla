@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "apple_pie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:pumpkin_pie",
+                    "nbt": "{ItemID:\"Apple_Pie\"}"
+                }
+            }
+        }
+
+    },
+    "rewards": {
+        "function": "spice_in_vanilla:items/apple_pie/run"
+    }
+}

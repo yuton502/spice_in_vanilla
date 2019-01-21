@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "melon_juice": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:potion",
+                    "nbt": "{ItemID:\"Melon_Juice\"}"
+                }
+            }
+        }
+
+    },
+    "rewards": {
+        "function": "spice_in_vanilla:items/foods/melon_juice"
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "criteria": {
+        "durability_changed_helmet": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:gold_helmet",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": {
+                    "max": -1
+                }
+            }
+        },
+        "durability_changed_chestplate": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:gold_chestplate",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": {
+                    "max": -1
+                }
+            }
+        },
+        "durability_changed_leggings": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:gold_leggings",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": {
+                    "max": -1
+                }
+            }
+        },
+        "durability_changed_boots": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:gold_boots",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": {
+                    "max": -1
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["durability_changed_helmet" , "durability_changed_chestplate" , "durability_changed_leggings" , "durability_changed_boots"]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:systems/custom_durability/gold_armors"
+    }
+}

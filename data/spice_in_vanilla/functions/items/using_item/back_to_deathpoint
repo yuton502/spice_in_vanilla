@@ -1,0 +1,21 @@
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ tp @e[type=Item,r=6] @s
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ scoreboard players tag @e[type=Item,r=3] add BackToDeathPoint {Item:{tag:{ItemID:"Back_to_DeathPoint"}}}
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ testfor @e[type=Item,r=1]
+execute @e[type=Armor_Stand,tag=BackToDeathPoint,score_AffectedEntities=1] ~ ~ ~ clear @a[tag=Death,score_HP_min=1] diamond_sword 3 1
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ kill @e[type=Item,tag=BackToDeathPoint]
+
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ execute @a[tag=AddGive,score_HP_min=1] ~ ~ ~ summon Item ~ ~ ~ {PickupDelay:0,UUIDMost:1156L,UUIDLeast:1156L,Item:{id:"minecraft:diamond_sword",Count:1b,Damage:3s,tag:{display:{Name:"§eデスポイント・バック",Lore:["§7死んだ際に投げて","§7死亡場所へテレポート！"]},Unbreakable:1b,AttributeModifiers:[{Name:"HaruEditor",UUIDLeast:1582501835l,UUIDMost:1582501835l,Operation:0,AttributeName:"generic.attackDamage",Amount:0d,Slot:"mainhand"},{Name:"HaruEditor",UUIDLeast:1582501835l,UUIDMost:1582501835l,Operation:0,AttributeName:"generic.attackDamage",Amount:0d,Slot:"offhand"},{Name:"HaruEditor",UUIDLeast:1582501835l,UUIDMost:1582501835l,Operation:0,AttributeName:"generic.attackSpeed",Amount:0.4d,Slot:"offhand"},{Name:"HaruEditor",UUIDLeast:1582501835l,UUIDMost:1582501835l,Operation:0,AttributeName:"generic.attackSpeed",Amount:-3d,Slot:"mainhand"}],HideFlags:6,ItemID:"Back_to_DeathPoint",KillItem:1b}}}
+scoreboard players tag @a[tag=AddGive,score_HP_min=1] remove AddGive
+
+execute @a[score_DropCount_min=1] ~ ~ ~ scoreboard players tag @e[type=Item,dy=2,c=1] add BackToDeathPointTeleport {Item:{tag:{ItemID:"Back_to_DeathPoint"}}}
+execute @e[type=Item,tag=BackToDeathPointTeleport] ~ ~ ~ scoreboard players tag @a[score_DropCount_min=1,c=1] add BackToDeathPointTeleport
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ tp @a[tag=BackToDeathPointTeleport] @s
+scoreboard players tag @a[tag=BackToDeathPointTeleport] remove BackToDeathPointTeleport
+kill @e[type=Item,tag=BackToDeathPointTeleport]
+
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ testfor @e[type=Item,r=3]
+execute @e[type=Armor_Stand,tag=BackToDeathPoint,score_SuccessCount=0] ~ ~ ~ scoreboard players tag @a[] remove SucceedBackToDeathPoint
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ testfor @e[type=Item,r=3]
+execute @e[type=Armor_Stand,tag=BackToDeathPoint,score_SuccessCount=0] ~ ~ ~ scoreboard players tag @a[] remove Death
+execute @e[type=Armor_Stand,tag=BackToDeathPoint] ~ ~ ~ testfor @e[type=Item,r=3]
+kill @e[type=Armor_Stand,tag=BackToDeathPoint,score_SuccessCount=0]

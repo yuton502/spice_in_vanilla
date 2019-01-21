@@ -1,0 +1,121 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.bone_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.bone_tool.description"
+        }
+    },
+    "parent": "spice_in_vanilla:story/flint_tool",
+    "requirements": [
+        [ "get_bone_sword", "get_bone_pickaxe", "get_bone_shovel", "get_bone_axe", "get_bone_hoe", "get_bone_helmet", "get_bone_chestplate", "get_bone_leggings", "get_bone_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/bone_tool" ]
+    },
+    "criteria": {
+        "get_bone_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_sword",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_pickaxe",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_shovel",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_axe",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_hoe",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        },
+        "get_bone_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{MaterialType:\"Bone\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

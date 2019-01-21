@@ -1,0 +1,9 @@
+give @p minecraft:diamond_sword{MaxDurability:1280,Truth_MaxDurability:1561,Durability:1280,CustomDurability:true,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_sword\"}"},MaterialType:"Emerald",ToolType:"Sword"}
+give @p minecraft:diamond_shovel{MaxDurability:1280,Truth_MaxDurability:1561,Durability:1280,CustomDurability:true,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_shovel\"}"},ench:[{id:33s,lvl:1s}],MaterialType:"Emerald",ToolType:"Tools"}
+give @p minecraft:diamond_pickaxe{MaxDurability:1280,Truth_MaxDurability:1561,Durability:1280,CustomDurability:true,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_pickaxe\"}"},ench:[{id:33s,lvl:1s}],MaterialType:"Emerald",ToolType:"Tools"}
+give @p minecraft:diamond_axe{MaxDurability:1280,Truth_MaxDurability:1561,Durability:1280,CustomDurability:true,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_axe\"}"},ench:[{id:33s,lvl:1s}],MaterialType:"Emerald",ToolType:"Tools"}
+give @p minecraft:diamond_hoe{MaxDurability:1280,Truth_MaxDurability:1561,Durability:1280,CustomDurability:true,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_hoe\"}"},MaterialType:"Emerald",ToolType:"Hoe"}
+give @p minecraft:diamond_helmet{Damage:73s,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_helmet\"}"},MaterialType:"Emerald",ToolType:"Armor"}
+give @p minecraft:diamond_chestplate{Damage:106s,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_chestplate\"}"},MaterialType:"Emerald",ToolType:"Armor"}
+give @p minecraft:diamond_leggings{Damage:99s,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_leggings\"}"},MaterialType:"Emerald",ToolType:"Armor"}
+give @p minecraft:diamond_boots{Damage:86s,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.emerald_boots\"}"},MaterialType:"Emerald",ToolType:"Armor"}

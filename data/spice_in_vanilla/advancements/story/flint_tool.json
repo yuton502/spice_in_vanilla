@@ -1,0 +1,121 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.flint_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.flint_tool.description"
+        }
+    },
+    "parent": "spice_in_vanilla:story/root",
+    "requirements": [
+        [ "get_flint_sword", "get_flint_pickaxe", "get_flint_shovel", "get_flint_axe", "get_flint_hoe", "get_flint_helmet", "get_flint_chestplate", "get_flint_leggings", "get_flint_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/flint_tool" ]
+    },
+    "criteria": {
+        "get_flint_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_sword",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_pickaxe",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_shovel",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_axe",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_hoe",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        },
+        "get_flint_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{MaterialType:\"Flint\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

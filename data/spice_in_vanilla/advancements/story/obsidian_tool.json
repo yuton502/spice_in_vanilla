@@ -1,0 +1,122 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:obsidian"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.obsidian_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.obsidian_tool.description"
+        },
+        "frame": "goal"
+    },
+    "parent": "spice_in_vanilla:story/redstone_tool",
+    "requirements": [
+        [ "get_obsidian_sword", "get_obsidian_pickaxe", "get_obsidian_shovel", "get_obsidian_axe", "get_obsidian_hoe", "get_obsidian_helmet", "get_obsidian_chestplate", "get_obsidian_leggings", "get_obsidian_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/obsidian_tool" ]
+    },
+    "criteria": {
+        "get_obsidian_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_pickaxe",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_shovel",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_axe",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_hoe",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_helmet",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_chestplate",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_leggings",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        },
+        "get_obsidian_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_boots",
+                        "nbt": "{MaterialType:\"Obsidian\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

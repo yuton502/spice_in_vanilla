@@ -1,0 +1,26 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.ender_leggings"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{MaterialType:\"Ender\",ToolType:\"Tools\"}"
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

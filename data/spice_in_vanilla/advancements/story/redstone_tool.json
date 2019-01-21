@@ -1,0 +1,121 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.redstone_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.redstone_tool.description"
+        }
+    },
+    "parent": "spice_in_vanilla:story/emerald_tool",
+    "requirements": [
+        [ "get_redstone_sword", "get_redstone_pickaxe", "get_redstone_shovel", "get_redstone_axe", "get_redstone_hoe", "get_redstone_helmet", "get_redstone_chestplate", "get_redstone_leggings", "get_redstone_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/redstone_tool" ]
+    },
+    "criteria": {
+        "get_redstone_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_sword",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_pickaxe",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_shovel",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_axe",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        },
+        "get_redstone_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Redstone\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

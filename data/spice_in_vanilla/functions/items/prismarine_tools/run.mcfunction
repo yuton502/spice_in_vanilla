@@ -1,0 +1,1 @@
+execute as @a[nbt={Inventory:[{Slot:103b,tag:{MaterialType:"Prismarine"}},{Slot:102b,tag:{MaterialType:"Prismarine"}},{Slot:101b,tag:{MaterialType:"Prismarine"}},{Slot:100b,tag:{MaterialType:"Prismarine"}}]}] run function spice_in_vanilla:items/prismarine_tools/armor

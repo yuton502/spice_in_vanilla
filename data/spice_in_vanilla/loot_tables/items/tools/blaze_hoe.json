@@ -1,0 +1,26 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_hoe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.blaze_hoe"
+                            }
+                        },                        
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1b,MaterialType:\"Blaze\",ToolType:\"Hoe\"}"
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

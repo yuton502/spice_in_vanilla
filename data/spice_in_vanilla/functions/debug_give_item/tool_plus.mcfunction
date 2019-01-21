@@ -1,0 +1,6 @@
+give @p minecraft:iron_axe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.iron_lumberjack_axe\"}"},MaterialType:"Iron",ToolType:"Tools",Lumber:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}
+give @p minecraft:iron_pickaxe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.iron_hammer\"}"},MaterialType:"Iron",ToolType:"Tools",Hammer:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}
+give @p minecraft:iron_shovel{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.iron_excavator\"}"},MaterialType:"Iron",ToolType:"Tools",Excavator:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}
+give @p minecraft:diamond_axe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.diamond_lumberjack_axe\"}"},MaterialType:"Diamond",ToolType:"Tools",Lumber:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}
+give @p minecraft:diamond_pickaxe{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.diamond_hammer\"}"},MaterialType:"Diamond",ToolType:"Tools",Hammer:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}
+give @p minecraft:diamond_shovel{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.diamond_excavator\"}"},MaterialType:"Diamond",ToolType:"Tools",Excavator:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:3s}]}

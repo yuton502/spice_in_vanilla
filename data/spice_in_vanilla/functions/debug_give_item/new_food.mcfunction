@@ -1,0 +1,2 @@
+give @s minecraft:pumpkin_pie{display:{LocName:"item.applePie.name"},ItemID:"Apple_Pie"}
+give @s potion{display:{LocName:"item.melonJuice.name"},CustomPotionColor:16648042,CustomPotionEffects:[{Id:10b,Amplifier:3b,Duration:15},{Id:23b,Amplifier:3b,Duration:20},{Id:17b,Amplifier:34b,Duration:20}],HideFlags:0,ItemID:"Melon_Juice"}

@@ -1,0 +1,26 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:leather_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.bone_chestplate"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{color:16776934},MaterialType:\"Bone\",ToolType:\"Armor\"}"
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

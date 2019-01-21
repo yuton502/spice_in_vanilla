@@ -1,0 +1,1 @@
+tellraw @a [{"text":"Datapack Name : Spice in Vanilla\n","color":"green","underline":"true"},{"text":"Version : Not Release Version (Progress 30%...)\n\n","color":"aqua"},{"text":"Progress : \"Tools\" 80% , \"Other Items\" 20% , \"Advancements\" 40% , \"Recipes\" 10% , \"Mobs\" 0% , \"Systems\" 30%","color":"dark_aqua"}]

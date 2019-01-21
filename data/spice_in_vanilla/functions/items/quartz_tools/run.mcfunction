@@ -1,0 +1,1 @@
+execute as @a[nbt={Inventory:[{Slot:100b,tag:{MaterialType:"Quartz",ToolType:"Armor"}},{Slot:101b,tag:{MaterialType:"Quartz",ToolType:"Armor"}},{Slot:102b,tag:{MaterialType:"Quartz",ToolType:"Armor"}},{Slot:103b,tag:{MaterialType:"Quartz",ToolType:"Armor"}}]}] run function spice_in_vanilla:items/quartz_tools/armor

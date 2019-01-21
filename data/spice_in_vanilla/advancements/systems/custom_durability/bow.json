@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "durability_changed": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:bow",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -1
+            }
+        }
+    },
+    "requirements": [
+        ["durability_changed"]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:systems/custom_durability/bow"
+    }
+}

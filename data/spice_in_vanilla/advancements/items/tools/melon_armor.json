@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_melon_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{MaterialType:\"Melon\"}"
+                    }
+                ]
+            }
+        },
+        "get_melon_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{MaterialType:\"Melon\"}"
+                    }
+                ]
+            }
+        },
+        "get_melon_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{MaterialType:\"Melon\"}"
+                    }
+                ]
+            }
+        },
+        "get_melon_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{MaterialType:\"Melon\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_melon_helmet"], ["get_melon_chestplate"], ["get_melon_leggings"], ["get_melon_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/melon_tools/run_armor"
+    }
+}

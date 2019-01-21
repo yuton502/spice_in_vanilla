@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_blaze_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_blaze_helmet"], ["get_blaze_chestplate"], ["get_blaze_leggings"], ["get_blaze_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/blaze_tools/run_armor"
+    }
+}

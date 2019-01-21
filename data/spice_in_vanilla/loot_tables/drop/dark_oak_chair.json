@@ -1,0 +1,21 @@
+﻿{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:armor_stand",
+                    "weight": 10,
+                    "quality": 1,
+                    "functions": [                        
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{LocName:\"item.darkOakChair.name\",Name:false},ItemID:\"Chair\",EntityTag:{Tags:[\"Dark_Oak_Chair\",\"InstantFuniture\"],Invisible:1b,NoGravity:1b,Marker:1b}}"
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

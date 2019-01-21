@@ -1,0 +1,26 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:stone_hoe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.melon_hoe"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{MaterialType:\"Melon\",ToolType:\"Hoe\"}"
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+execute as @s at @s unless entity @e[type=villager,tag=Container,distance=..3] if entity @e[type=armor_stand,distance=..6] anchored feet run summon villager ^ ^ ^1 {Silent:1b,ActiveEffects:[{Id:11b,Amplifier:4b,Duration:100000000,ShowParticles:0b}],Offers:{},CanPickUpLoot:0b,Tags:["Container"],DeathLootTable:"minecraft:empty",NoAI:1b}
+
+execute as @s at @s if entity @e[type=villager,tag=Container,distance=..3] if entity @e[type=armor_stand,distance=..6] anchored feet positioned ^ ^ ^4 run tp @e[type=villager,tag=Container,distance=..1] @s

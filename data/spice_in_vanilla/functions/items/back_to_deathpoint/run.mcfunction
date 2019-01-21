@@ -1,0 +1,6 @@
+execute as @a[scores={HP=..0},nbt={Inventory:[{tag:{ItemID:"Back_to_DeathPoint"}}]},tag=!Back_to_DeathPoint] at @s run summon armor_stand ~ ~ ~ {Invisible:0b,Marker:1b,NoGravity:1b,Tags:["BackToDeathPoint","ItemGive"],CommandStats:{SuccessCountObjective:"SuccessCount",SuccessCountName:"@s",AffectedEntitiesObjective:"AffectedEntities",AffectedEntitiesName:"@s"}}
+tag @a[scores={HP=..0},nbt={Inventory:[{tag:{ItemID:"Back_to_DeathPoint"}}]}] add Back_to_DeathPoint
+
+execute as @a[scores={HP=1..},tag=Back_to_DeathPoint] at @s as @e[type=item,sort=nearest,nbt={Age:1s,Item:{tag:{ItemID:"Back_to_DeathPoint"}}},distance=..1,limit=1] run tp @a[scores={HP=1..},tag=Back_to_DeathPoint] @e[type=armor_stand,tag=BackToDeathPoint,limit=1]
+execute as @a[scores={HP=1..},tag=Back_to_DeathPoint] at @s as @e[type=item,sort=nearest,nbt={Age:1s,Item:{tag:{ItemID:"Back_to_DeathPoint"}}},distance=..1,limit=1] run tag @a[scores={HP=1..},tag=Back_to_DeathPoint] remove Back_to_DeathPoint
+execute as @a[scores={HP=1..},tag=Back_to_DeathPoint] at @s as @e[type=item,sort=nearest,nbt={Age:1s,Item:{tag:{ItemID:"Back_to_DeathPoint"}}},distance=..1,limit=1] run kill @s

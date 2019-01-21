@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "damage_dealt": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "type": "minecraft:player",
+                        "nbt": "{SelectedItem:{tag:{MaterialType:\"Ender\",ToolType:\"Sword\"}}}"
+                    }
+                }
+            }
+        }
+
+    },
+    "rewards": {
+        "function": "spice_in_vanilla:items/tools/ender_sword"
+    }
+}

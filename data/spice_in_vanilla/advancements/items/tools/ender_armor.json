@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_ender_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Ender\"}"
+                    }
+                ]
+            }
+        },
+        "get_ender_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Ender\"}"
+                    }
+                ]
+            }
+        },
+        "get_ender_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Ender\"}"
+                    }
+                ]
+            }
+        },
+        "get_ender_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Ender\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_ender_helmet"], ["get_ender_chestplate"], ["get_ender_leggings"], ["get_ender_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/ender_tools/run_armor"
+    }
+}

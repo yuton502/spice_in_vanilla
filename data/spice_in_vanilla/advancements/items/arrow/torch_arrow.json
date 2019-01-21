@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "torch_arrow": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                    "item": "minecraft:tipped_arrow",
+                    "nbt": "{ItemID:\"Torch_Arrow\"}"
+                    }
+                ]
+            }
+        },
+        "use_bow":{
+            "trigger": "minecraft:impossible"
+        }
+
+    },
+    "requirements":[
+        ["torch_arrow"], ["use_bow"]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/arrow/torch/run"
+    }
+}

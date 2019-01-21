@@ -1,0 +1,121 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_rod"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.blaze_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.blaze_tool.description"
+        }
+    },
+    "parent": "spice_in_vanilla:story/prismarine_tool",
+    "requirements": [
+        [ "get_blaze_sword", "get_blaze_pickaxe", "get_blaze_shovel", "get_blaze_axe", "get_blaze_hoe", "get_blaze_helmet", "get_blaze_chestplate", "get_blaze_leggings", "get_blaze_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/blaze_tool" ]
+    },
+    "criteria": {
+        "get_blaze_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_sword",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_pickaxe",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_shovel",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_axe",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        },
+        "get_blaze_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Blaze\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

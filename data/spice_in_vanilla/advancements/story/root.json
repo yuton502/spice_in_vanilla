@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_pickaxe"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.root.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.root.description"
+        },
+        "background": "minecraft:textures/block/gray_wool.png",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:armor_stand",
+                        "nbt": "{ItemID:\"Custom_Crafting_Table\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

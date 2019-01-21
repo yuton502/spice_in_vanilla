@@ -1,0 +1,5 @@
+scoreboard players tag @a[c=1] remove AddGive
+#kill @e[type=Armor_Stand,tag=BackToDeathPoint,c=1]
+scoreboard players tag @a[tag=Death] add AddGive
+scoreboard players tag @a[c=1] remove SucceedBackToDeathPoint
+scoreboard players tag @a[c=1] remove Death

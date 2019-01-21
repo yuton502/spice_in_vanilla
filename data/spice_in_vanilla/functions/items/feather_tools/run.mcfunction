@@ -1,0 +1,1 @@
+execute as @e[type=shulker,tag=DoubleJump] unless entity @a[nbt={Inventory:[{Slot:103b,tag:{MaterialType:"Feather"}},{Slot:102b,tag:{MaterialType:"Feather"}},{Slot:101b,tag:{MaterialType:"Feather"}},{Slot:100b,tag:{MaterialType:"Feather"}}]}] run data merge entity @s {Health:0f,DeathTime:19s}

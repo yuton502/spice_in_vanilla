@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    " Y ",
+    " Y "
+  ],
+  "key": {
+      "X": {
+        "item": "minecraft:melon",
+        "nbt": "{display:{\"Name\":\"{\\\"text\\\":\\\"aaa\\\"}\"}}"
+      },
+      "Y": {
+        "item": "minecraft:stick"
+      }
+  },
+  "result": {
+    "item": "minecraft:stone_pickaxe",
+    "nbt": "{ench:[{id:34s,lvl:1s}]}"
+  }
+}

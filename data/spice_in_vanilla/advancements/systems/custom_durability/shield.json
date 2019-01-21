@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "durability_changed": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:shield",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": {
+                    "max": -1
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["durability_changed"]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:systems/custom_durability/shield"
+    }
+}

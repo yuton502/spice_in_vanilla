@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "apple_pie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:bread",
+                    "nbt": "{ItemID:\"Chocochip_Bread\"}"
+                }
+            }
+        }
+
+    },
+    "rewards": {
+        "function": "spice_in_vanilla:items/chocochip_bread/run"
+    }
+}

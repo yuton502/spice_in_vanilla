@@ -1,0 +1,28 @@
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/oak_chair
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/birch_chair
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/spruce_chair
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/jungle_chair
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/acacia_chair
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/dark_oak_chair
+
+execute @e[type=Armor_Stand,tag=InstantFuniture] ~ ~ ~ function spice_in_vanilla:items/funitures/table
+
+
+scoreboard players set @e[type=Armor_Stand,tag=ChairLeader] SuccessCount 0
+execute @e[type=Armor_Stand,tag=ChairLeader] ~ ~ ~ testfor @e[tag=ChairRoot,r=1,c=1]
+execute @e[type=Armor_Stand,tag=ChairLeader,score_SuccessCount=0] ~ ~ ~ kill @e[tag=Chair,dy=2]
+entitydata @e[type=Armor_Stand,tag=Chair] {Fire:32767s}
+execute @e[type=Armor_Stand,tag=!NoFire] ~ ~ ~ entitydata @s[tag=Table] {Fire:32767s}
+
+
+scoreboard players set @e[type=Armor_Stand,tag=TableLeader] SuccessCount 0
+execute @e[type=Armor_Stand,tag=TableLeader] ~ ~ ~ testforblock ~ ~1.5 ~ air
+execute @e[type=Armor_Stand,tag=TableLeader,score_SuccessCount_min=1] ~ ~ ~ scoreboard players tag @s add TableDestroy
+execute @e[type=Armor_Stand,tag=OakTableLeader] ~ ~ ~ execute @s[tag=TableDestroy] ~ ~ ~ entitydata @e[type=Item,dy=2,c=1] {Item:{id:"minecraft:armor_stand",tag:{display:{LocName:"item.oakTable.name",Name:false},ItemID:"Table",EntityTag:{Tags:["Oak_Table","InstantFuniture"],Invisible:1b,NoGravity:1b,Marker:1b}}}}
+execute @e[type=Armor_Stand,tag=BirchTableLeader] ~ ~ ~ execute @s[tag=TableDestroy] ~ ~ ~ entitydata @e[type=Item,dy=2,c=1] {Item:{id:"minecraft:armor_stand",Damage:0s,tag:{display:{LocName:"item.birchTable.name",Name:false},ItemID:"Table",EntityTag:{Tags:["Birch_Table","InstantFuniture"],Invisible:1b,NoGravity:1b,Marker:1b}}}}
+execute @e[type=Armor_Stand,tag=SpruceTableLeader] ~ ~ ~ execute @s[tag=TableDestroy] ~ ~ ~ entitydata @e[type=Item,dy=2,c=1] {Item:{id:"minecraft:armor_stand",Damage:0s,tag:{display:{LocName:"item.spruceTable.name",Name:false},ItemID:"Table",EntityTag:{Tags:["Spruce_Table","InstantFuniture"],Invisible:1b,NoGravity:1b,Marker:1b}}}}
+execute @e[type=Armor_Stand,tag=JungleTableLeader] ~ ~ ~ execute @s[tag=TableDestroy] ~ ~ ~ entitydata @e[type=Item,dy=2,c=1] {Item:{id:"minecraft:armor_stand",Damage:0s,tag:{display:{LocName:"item.jungleTable.name",Name:false},ItemID:"Table",EntityTag:{Tags:["Jungle_Table","InstantFuniture"],Invisible:1b,NoGravity:1b,Marker:1b}}}}
+execute @e[type=Armor_Stand,tag=AcaciaTableLeader] ~ ~ ~ execute @s[tag=TableDestroy] ~ ~ ~ entitydata @e[type=Item,dy=2,c=1] {Item:{id:"minecraft:armor_stand",Damage:0s,tag:{display:{LocName:"item.acaciaTable.name",Name:false},ItemID:"Table",EntityTag:{Tags:["Acacia_Table","InstantFuniture"],Invisible:1b,NoGravity:1b,Marker:1b}}}}
+execute @e[type=Armor_Stand,tag=Dark_Oak_TableLeader] ~ ~ ~ execute @s[tag=TableDestroy] ~ ~ ~ entitydata @e[type=Item,dy=2,c=1] {Item:{id:"minecraft:armor_stand",Damage:0s,tag:{display:{LocName:"item.darkOakTable.name",Name:false},ItemID:"Table",EntityTag:{Tags:["Dark_Oak_Table","InstantFuniture"],Invisible:1b,NoGravity:1b,Marker:1b}}}}
+execute @e[type=Armor_Stand,tag=TableDestroy] ~ ~ ~ kill @e[tag=Table,dy=2]
+

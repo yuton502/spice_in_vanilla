@@ -1,0 +1,1 @@
+give @s minecraft:tipped_arrow{CustomPotionEffects:[{Id:15b,Duration:2,ShowParticles:0b,ShowIcon:0b,Amplifier:127b}],CustomPotionColor:15204357,display:{"Name":"{\"translate\":\"item.spice_in_vanilla.explosion_arrow\"}"},ItemID:"Explosion_Arrow",HideFlags:32}

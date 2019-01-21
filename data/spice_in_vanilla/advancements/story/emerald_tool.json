@@ -1,0 +1,121 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.emerald_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.emerald_tool.description"
+        }
+    },
+    "parent": "spice_in_vanilla:story/flint_tool",
+    "requirements": [
+        [ "get_emerald_sword", "get_emerald_pickaxe", "get_emerald_shovel", "get_emerald_axe", "get_emerald_hoe", "get_emerald_helmet", "get_emerald_chestplate", "get_emerald_leggings", "get_emerald_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/emerald_tool" ]
+    },
+    "criteria": {
+        "get_emerald_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_pickaxe",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_shovel",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_axe",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_hoe",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_helmet",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_chestplate",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_leggings",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        },
+        "get_emerald_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_boots",
+                        "nbt": "{MaterialType:\"Emerald\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

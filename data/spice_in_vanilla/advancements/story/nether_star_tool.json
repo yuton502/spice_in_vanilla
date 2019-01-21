@@ -1,0 +1,122 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:nether_star"
+        },
+        "title": {
+            "translate": "advancements.spice_in_vanilla.story.nether_star_tool.title"
+        },
+        "description": {
+            "translate": "advancements.spice_in_vanilla.story.nether_star_tool.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "spice_in_vanilla:story/shulker_tool",
+    "requirements": [
+        [ "get_netherStar_sword", "get_netherStar_pickaxe", "get_netherStar_shovel", "get_netherStar_axe", "get_netherStar_hoe", "get_netherStar_helmet", "get_netherStar_chestplate", "get_netherStar_leggings", "get_netherStar_boots" ]
+    ],
+    "rewards": {
+        "loot": [ "spice_in_vanilla:advancements/nether_star_tool" ]
+    },
+    "criteria": {
+        "get_netherStar_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_pickaxe",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_shovel",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_axe",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_hoe",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_helmet",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_chestplate",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_leggings",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_netherStar_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_boots",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

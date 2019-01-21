@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_nether_star_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_helmet",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_nether_star_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_chestplate",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_nether_star_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_leggings",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        },
+        "get_nether_star_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_boots",
+                        "nbt": "{MaterialType:\"Nether_Star\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_nether_star_helmet"], ["get_nether_star_chestplate"], ["get_nether_star_leggings"], ["get_nether_star_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/nether_star_tools/run_armor"
+    }
+}

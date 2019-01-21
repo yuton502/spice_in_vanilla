@@ -1,0 +1,110 @@
+{
+    "criteria": {
+        "durability_changed_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_shovel",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -1
+            }
+        },
+        "durability_changed_pickaxe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_pickaxe",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -1
+            }
+        },
+        "durability_changed_axe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_axe",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -1
+            }
+        },
+        "durability_changed_hoe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_hoe",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -1
+            }
+        },
+        "durability_changed_sword": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_sword",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -1
+            }
+        },
+        "durability_twice_changed_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_shovel",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -2
+            }
+        },
+        "durability_twice_changed_pickaxe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:diamond_pickaxe",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -2
+            }
+        },
+        "durability_twice_changed_axe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item" : "minecraft:diamond_axe",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -2
+            }
+        },
+        "durability_twice_changed_hoe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item" : "minecraft:diamond_hoe",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -2
+            }
+        },
+        "durability_twice_changed_sword": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "item" : "minecraft:diamond_sword",
+                    "nbt": "{CustomDurability:{}}"
+                },
+                "delta": -2
+            }
+        }
+    },
+    "requirements": [
+        ["durability_changed_shovel" , "durability_changed_pickaxe" , "durability_changed_axe" , "durability_changed_hoe" , "durability_changed_sword" , "durability_twice_changed_shovel" , "durability_twice_changed_pickaxe" , "durability_twice_changed_axe" , "durability_twice_changed_hoe" , "durability_twice_changed_sword"]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:systems/custom_durability/diamond_tools"
+    }
+}

@@ -1,0 +1,68 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.redstone_axe"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomDurability:{Max:960,Value:960},MaterialType:\"Redstone\",ToolType:\"Tools\"}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attackDamage",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 10,
+                                        "max": 10
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.attackSpeed",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": -3,
+                                        "max": -3
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "durability",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 960,
+                                        "max": 960
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "mainhand"
+                                    ]
+                                }
+                            ]
+                            
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

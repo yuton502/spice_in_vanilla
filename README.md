@@ -8,4 +8,4 @@ Spice in VanillaはMinecraftのカスタムデータパックです。ツール�
 # spice_in_vanilla / en
 Spice in Vanilla for Minecraft custom datapacks. Tools , sytems and more! There is many modification.
 
-I need to have many times to all finish. Please wait to finish for a long time. :3
+I need to  many times to all finish. Please wait to finish for a long time. :3

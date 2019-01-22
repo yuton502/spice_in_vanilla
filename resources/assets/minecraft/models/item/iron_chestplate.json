@@ -1,0 +1,14 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/iron_chestplate"
+	},
+	"overrides": [
+		{ 
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/blaze_tools/blaze_chestplate"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_sword"
+	},
+	"overrides": [
+		{ 
+			"predicate": {
+				"custom_model_data": 1,
+				"damage": 0
+				},
+				"model": "item/golden_hoe"
+			},
+		{
+			"predicate": {
+				"custom_model_data": 0,
+				"damage": 0.0006402048655569782
+				},
+				"model": "item/diamond_sword/blaze_ingot"
+			},
+		{ 
+			"predicate": {
+				"custom_model_data": 0,
+				"damage": 0.0012804097311139564
+				},
+				"model": "item/diamond_sword/amulet"
+			},
+		{ 
+			"predicate": {
+				"custom_model_data": 0,
+				"damage": 0.0019206145966709346
+				},
+				"model": "item/diamond_sword/back_to_deathpoint"
+			},
+		{ 
+			"predicate": {
+				"custom_model_data": 0,
+				"damage": 0.002560819462227913
+				},
+				"model": "item/diamond_sword/0004"
+			},
+		{ 
+			"predicate": {
+				"custom_model_data": 0,
+				"damaged": 1,
+				"damage": 0
+				},
+				"model": "item/diamond_sword"
+			},
+		{ 
+			"predicate": {
+				"custom_model_data": 1
+				},
+				"model": "item/emerald_tools/emerald_sword"
+			}
+	]
+}

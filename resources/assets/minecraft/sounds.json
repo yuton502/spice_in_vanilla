@@ -1,0 +1,44 @@
+{
+    "mario.1up_mushroom":{
+        "replace": false,
+        "subtitle": "1up_mushroom",
+        "sounds":[
+            "mario/1up_mushroom",
+            {
+                "name": "mario.1up_mushroom",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "weight": 1,
+                "stream": true
+            }
+        ]
+    },
+    "item.ore_detector.searching":{
+        "replace": false,
+        "subtitle": "ore_detector_searching",
+        "sounds":[
+            "item/ore_detector_searching",
+            {
+                "name": "item.ore_detector.searching",
+                "volume": 0.7,
+                "pitch": 1.0,
+                "weight": 1,
+                "stream": true
+            }
+        ]
+    },
+    "item.ore_detector.not_found":{
+        "replace": false,
+        "subtitle": "ore_detector_not_found",
+        "sounds":[
+            "item/ore_detector_not_found",
+            {
+                "name": "item.ore_detector.not_found",
+                "volume": 0.7,
+                "pitch": 1.0,
+                "weight": 1,
+                "stream": true
+            }
+        ]
+    }
+}

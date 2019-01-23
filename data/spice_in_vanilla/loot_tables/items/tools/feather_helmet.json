@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{MaterialType:\"Feather\",ToolType:\"Tools\"}"
+                            "tag": "{MaterialType:\"Feather\",ToolType:\"Armor\"}"
                         }
                     ]                    
                 }

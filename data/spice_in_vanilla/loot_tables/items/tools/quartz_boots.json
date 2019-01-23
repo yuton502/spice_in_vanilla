@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_leggings",
+                    "name": "minecraft:iron_boots",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.feather_leggings"
+                                "translate": "item.spice_in_vanilla.quartz_boots"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{MaterialType:\"Feather\",ToolType:\"Armor\"}"
+                            "tag": "{MaterialType:\"Quartz\",ToolType:\"Armor\",Enchantments:[{id:\"minecraft:fire_protection\",lvl:2s}]}"
                         }
                     ]                    
                 }

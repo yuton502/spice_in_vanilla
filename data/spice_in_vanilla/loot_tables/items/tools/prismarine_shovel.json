@@ -1,0 +1,68 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_shovel",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.prismarine_shovel"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomDurability:{Max:512,Value:512},MaterialType:\"Prismarine\",ToolType:\"Tools\"}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attackDamage",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 4.5,
+                                        "max": 4.5
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.attackSpeed",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": -3,
+                                        "max": -3
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "durability",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 512,
+                                        "max": 512
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "mainhand"
+                                    ]
+                                }
+                            ]
+                            
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

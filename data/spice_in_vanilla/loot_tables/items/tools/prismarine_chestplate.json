@@ -1,0 +1,43 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.prismarine_chestplate"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{MaterialType:\"Prismarine\",ToolType:\"Armor\",Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:thorns\",lvl:2s}]}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.armor",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 6,
+                                        "max": 6
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "chest"
+                                    ]
+                                }
+                            ]                          
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

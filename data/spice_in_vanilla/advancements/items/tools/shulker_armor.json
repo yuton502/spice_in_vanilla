@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_shulker_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_helmet",
+                        "nbt": "{MaterialType:\"Shulker\"}"
+                    }
+                ]
+            }
+        },
+        "get_shulker_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_chestplate",
+                        "nbt": "{MaterialType:\"Shulker\"}"
+                    }
+                ]
+            }
+        },
+        "get_shulker_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_leggings",
+                        "nbt": "{MaterialType:\"Shulker\"}"
+                    }
+                ]
+            }
+        },
+        "get_shulker_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_boots",
+                        "nbt": "{MaterialType:\"Shulker\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_shulker_helmet"], ["get_shulker_chestplate"], ["get_shulker_leggings"], ["get_shulker_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/shulker_tools/run_armor"
+    }
+}

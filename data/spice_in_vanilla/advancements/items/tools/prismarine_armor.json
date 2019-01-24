@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_prismarine_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Prismarine\"}"
+                    }
+                ]
+            }
+        },
+        "get_prismarine_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Prismarine\"}"
+                    }
+                ]
+            }
+        },
+        "get_prismarine_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Prismarine\"}"
+                    }
+                ]
+            }
+        },
+        "get_prismarine_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Prismarine\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_prismarine_helmet"], ["get_prismarine_chestplate"], ["get_prismarine_leggings"], ["get_prismarine_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/prismarine_tools/run_armor"
+    }
+}

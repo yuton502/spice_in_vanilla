@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_quartz_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_helmet",
+                        "nbt": "{MaterialType:\"Quartz\"}"
+                    }
+                ]
+            }
+        },
+        "get_quartz_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_chestplate",
+                        "nbt": "{MaterialType:\"Quartz\"}"
+                    }
+                ]
+            }
+        },
+        "get_quartz_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_leggings",
+                        "nbt": "{MaterialType:\"Quartz\"}"
+                    }
+                ]
+            }
+        },
+        "get_quartz_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_boots",
+                        "nbt": "{MaterialType:\"Quartz\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_quartz_helmet"], ["get_quartz_chestplate"], ["get_quartz_leggings"], ["get_quartz_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/quartz_tools/run_armor"
+    }
+}

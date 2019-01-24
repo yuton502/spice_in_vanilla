@@ -1,0 +1,54 @@
+{
+    "criteria": {
+        "get_slime_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{MaterialType:\"Slime\"}"
+                    }
+                ]
+            }
+        },
+        "get_slime_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{MaterialType:\"Slime\"}"
+                    }
+                ]
+            }
+        },
+        "get_slime_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{MaterialType:\"Slime\"}"
+                    }
+                ]
+            }
+        },
+        "get_slime_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{MaterialType:\"Slime\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["get_slime_helmet"], ["get_slime_chestplate"], ["get_slime_leggings"], ["get_slime_boots" ]
+    ],
+    "rewards": {
+        "function": "spice_in_vanilla:items/slime_tools/run_armor"
+    }
+}

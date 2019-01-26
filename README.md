@@ -17,3 +17,15 @@ I need to spend a lot of time to all finish. Please wait to finish for a long ti
 
 1. Uncompress saved the file, and set in saves/(world name)/datapacks it.
 1. Set in saves/(world name) resource.zip in the file.
+
+# 更新履歴 / Changelogs
+
+### Ver.α.0.0.3
+#### 変更点 / Changes
+* 防具のファンクションの実行に、Advancementを介するように変更。<br>Run armor functions through advancements.
+#### バグ修正 / Fixes
+* 特殊効果が発動する防具を着たままワールドを入り直すと、リロードするまで効果が発動しないバグを修正。<br>
+Fixes the bug that relogin in the world when remaining equipping the armor having custom effects,  don't run custom effects until reload.
+
+それ以前は[こちら](https://github.com/yuton502/spice_in_vanilla/wiki/Changelogs)からどうぞ。<br>
+Can see previous version [here](https://github.com/yuton502/spice_in_vanilla/wiki/Changelogs).

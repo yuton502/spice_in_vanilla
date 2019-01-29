@@ -11,8 +11,7 @@ execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"min
 execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:gold_ore",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:gold_ingot"},Tags:[Smelted,Effect]}
 
 #smelting recipe : glass
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:sand",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:glass"},Tags:[Smelted,Effect]}
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:red_sand",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:glass"},Tags:[Smelted,Effect]}
+execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6] unless entity @s[nbt=!{Item:{id:"minecraft:sand",Count:1b},Age:1s},nbt=!{Item:{id:"minecraft:red_sand",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:glass"},Tags:[Smelted,Effect]}
 
 #smelting recipe : smooth sandstone
 execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:sandstone",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:smooth_sandstone"},Tags:[Smelted,Effect]}
@@ -37,12 +36,7 @@ execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"min
 execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:quartz_block",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:smooth_quartz"},Tags:[Smelted,Effect]}
 
 #smelting recipe : log
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:oak_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:birch_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:spruce_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:jungle_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:acacia_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
-execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:dark_oak_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
+execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6] unless entity @s[ nbt=!{Item:{id:"minecraft:oak_log",Count:1b},Age:1s},nbt=!{Item:{id:"minecraft:birch_log",Count:1b},Age:1s},nbt=!{Item:{id:"minecraft:spruce_log",Count:1b},Age:1s},nbt=!{Item:{id:"minecraft:jungle_log",Count:1b},Age:1s},nbt=!{Item:{id:"minecraft:acacia_log",Count:1b},Age:1s},nbt=!{Item:{id:"minecraft:dark_oak_log",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:charcoal"},Tags:[Smelted,Effect]}
 
 #smelting recipe : sponge
 execute as @s at @s as @e[type=item,tag=!Smelted,distance=..6,nbt={Item:{id:"minecraft:wet_sponge",Count:1b},Age:1s}] store success score @s SuccessCount run data merge entity @s {Item:{id:"minecraft:sponge"},Tags:[Smelted,Effect]}

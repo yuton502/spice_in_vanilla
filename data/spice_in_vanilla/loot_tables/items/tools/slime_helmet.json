@@ -1,0 +1,55 @@
+﻿{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:leather_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.slime_helmet"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{color:60946},MaterialType:\"Slime\",ToolType:\"Armor\"}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.armor",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 1,
+                                        "max": 1
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.movementSpeed",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": -0.05,
+                                        "max": -0.05
+                                    },
+                                    "operation": "multiply_base",
+                                    "slot": [ 
+                                        "head"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

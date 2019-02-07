@@ -198,6 +198,7 @@
 "item.spice_in_vanilla.torch_arrow" : "§aTorch Arrow",
 "item.spice_in_vanilla.explosion_arrow" : "§aExplosion Arrow",
 "item.spice_in_vanilla.teleport_arrow" : "§aTeleport Arrow",
+"item.spice_in_vanilla.thunder_arrow" : "§aThunder Arrow",
 
 "item.spice_in_vanilla.ore_detector" : "§eOre Detector",
 
@@ -205,6 +206,7 @@
 "enchantment.spice_in_vanilla.grinding": "Grinding",
 "enchantment.spice_in_vanilla.stripping": "Stripping",
 "enchantment.spice_in_vanilla.widely_attack": "Widely Attack",
+"enchantment.spice_in_vanilla.weakness": "Weakness",
 
 "attribute.name.durability": "Durability",
 

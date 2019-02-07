@@ -197,6 +197,7 @@
 "item.spice_in_vanilla.torch_arrow" : "§a松明の矢",
 "item.spice_in_vanilla.explosion_arrow" : "§a爆発の矢",
 "item.spice_in_vanilla.teleport_arrow" : "§aテレポート矢",
+"item.spice_in_vanilla.thunder_arrow" : "§a雷の矢",
 
 "item.spice_in_vanilla.ore_detector" : "§e鉱石探知機",
 
@@ -212,6 +213,7 @@
 "enchantment.spice_in_vanilla.stripping": "剥ぎ取り",
 "enchantment.spice_in_vanilla.widely_attack": "範囲攻撃",
 "enchantment.spice_in_vanilla.saturation": "満腹度回復",
+"enchantment.spice_in_vanilla.weakness": "弱体化",
 
 "attribute.name.durability": "耐久値",
 

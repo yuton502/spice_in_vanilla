@@ -1,6 +1,6 @@
 tag @a remove Lumber
 tag @a[scores={SneakTime=..0},nbt={SelectedItem:{tag:{Lumber:1b}}}] add Lumber
-execute as @a[tag=Lumber] run tag @s add EffectRemove
+execute as @a[tag=Lumber] run tag @s add EffectRemove_MiningFatigue
 effect give @a[tag=Lumber,tag=EffectRemove] minecraft:mining_fatigue 1 0 true
 
 execute as @a[tag=UseTools,scores={CoolTime=..2},tag=Lumber] at @s run tag @e[type=item,distance=..6,nbt={Age:1s,Item:{id:"minecraft:oak_log"}}] add Lumber

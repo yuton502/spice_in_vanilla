@@ -11,7 +11,7 @@ tag @a[tag=UseTools,tag=Excavator,y_rotation=226..314,x_rotation=-34.99..34.99] 
 tag @a[tag=UseTools,tag=Excavator,x_rotation=35..90] add HorizontalExcavator
 tag @a[tag=UseTools,tag=Excavator,x_rotation=-90..-34.99] add HorizontalExcavator
 execute as @a[tag=Excavator] store success score @s SuccessCount run effect give @s minecraft:mining_fatigue 1 0 true
-tag @a[scores={SuccessCount=1..}] add EffectRemove
+tag @a[scores={SuccessCount=1..}] add EffectRemove_MiningFatigue
 scoreboard players set @a[scores={SuccessCount=1..}] SuccessCount 0
 
 execute as @a[tag=Excavator,tag=UseTools,scores={CoolTime=..2}] at @s run tag @e[type=item,distance=..7,nbt={Age:1s}] add Excavator

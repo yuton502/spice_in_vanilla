@@ -24,6 +24,7 @@ function spice_in_vanilla:items/using_item/medicine
 function spice_in_vanilla:items/arrow/torch/run
 function spice_in_vanilla:items/arrow/explosion/run
 function spice_in_vanilla:items/arrow/teleport/run
+function spice_in_vanilla:items/arrow/thunder/run
 
 function spice_in_vanilla:items/funitures/funiture_root
 function spice_in_vanilla:items/container/run

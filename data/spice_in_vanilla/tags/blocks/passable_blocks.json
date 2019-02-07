@@ -18,6 +18,7 @@
     "#minecraft:wooden_stairs",
 
     "minecraft:air",
+    "minecraft:fire",
     "minecraft:redstone_wire",
     "minecraft:comparator",
     "minecraft:repeater",

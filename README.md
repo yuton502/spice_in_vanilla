@@ -20,12 +20,13 @@ I need to spend a lot of time to all finish. Please wait to finish for a long ti
 
 # 更新履歴 / Changelogs
 
-### Ver.α.0.0.3
+### Ver.α.0.0.4
+
+#### 追加点 / Additions
+* tagsのpassable_blocksにminecraft:tripwire（設置した糸）を追加。<br>Added minecraft:tripwire in tags of passable_blocks.
 #### 変更点 / Changes
-* 防具のファンクションの実行に、Advancementを介するように変更。<br>Run armor functions through advancements.
-#### バグ修正 / Fixes
-* 特殊効果が発動する防具を着たままワールドを入り直すと、リロードするまで効果が発動しないバグを修正。<br>
-Fixes the bug that relogin in the world when remaining equipping the armor having custom effects,  don't run custom effects until reload.
+* 一部のセレクタ周りを最適化。<br>Optimized a part of selector.
+* 粉砕レシピにあるグロウストーンとスイカのレシピの条件を変更。<br>Changed conditions of grinding recipes glowstone and melon.
 
 それ以前は[こちら](https://github.com/yuton502/spice_in_vanilla/wiki/Changelogs)からどうぞ。<br>
 Can see previous version [here](https://github.com/yuton502/spice_in_vanilla/wiki/Changelogs).

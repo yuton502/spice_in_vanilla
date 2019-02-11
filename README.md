@@ -11,22 +11,27 @@ I need to spend a lot of time to all finish. Please wait to finish for a long ti
 
 # 導入方法 / How to install
 1. 保存したzipファイルを解凍し、そのファイルをsaves/(ワールド名)/datapacksに入れます。
-1. そのファイルの中にあるresources.zipをsaves/(ワールド名)に入れてください。
-
+1. そのファイルの中にあるresourcesフォルダをresourcesに入れてください。  
+※なお、対応バージョンは19ｗ06aとなります。
 ***
 
 1. Uncompress saved the file, and set in saves/(world name)/datapacks it.
-1. Set in saves/(world name) resource.zip in the file.
+1. Set in resources resources folder in the file.  
+※Support Version is 19w06a.
 
 # 更新履歴 / Changelogs
 
-### Ver.α.0.0.4
+### Ver.α.0.0.5
 
 #### 追加点 / Additions
-* tagsのpassable_blocksにminecraft:tripwire（設置した糸）を追加。<br>Added minecraft:tripwire in tags of passable_blocks.
-#### 変更点 / Changes
-* 一部のセレクタ周りを最適化。<br>Optimized a part of selector.
-* 粉砕レシピにあるグロウストーンとスイカのレシピの条件を変更。<br>Changed conditions of grinding recipes glowstone and melon.
+* 「雷の矢」の追加。<br>Added "thunder arrow".
+* tagsのpassable_blocksにminecraft:fireを追加。<br>Added minecraft:fire in tags of passable_blocks.
+* 各特殊矢のルートテーブルとレシピを追加。<br>Added recipes and loot tables of special arrows.
+* スライムツールのルートテーブルを追加。<br>Added loot tables of Slime tools.
+
+#### バグ修正 / Fixes
+* passable_blocksにminecraft:fireをいれ忘れていた問題を修正。<br>Forget minecraft:fire in passable_blocks.
+* EffectRemoveのタグを持っている場合、記述されているすべてのエフェクトを削除してしまう問題を修正。<br>Remove all described effects in the case of having EffectRemove tag.
 
 それ以前は[こちら](https://github.com/yuton502/spice_in_vanilla/wiki/Changelogs)からどうぞ。<br>
 Can see previous version [here](https://github.com/yuton502/spice_in_vanilla/wiki/Changelogs).

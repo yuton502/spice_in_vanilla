@@ -15,6 +15,7 @@ function spice_in_vanilla:items/slime_tools/run
 function spice_in_vanilla:items/excavator/run
 function spice_in_vanilla:items/hammer/run
 function spice_in_vanilla:items/lumberjack_axe/run
+function spice_in_vanilla:items/hoe/run
 
 function spice_in_vanilla:items/step_boots/run
 function spice_in_vanilla:items/back_to_deathpoint/run
@@ -30,6 +31,11 @@ function spice_in_vanilla:items/funitures/funiture_root
 function spice_in_vanilla:items/container/run
 
 function spice_in_vanilla:recipes/custom_crafting_table
+function spice_in_vanilla:recipes/drop_recipes/run
+
+function spice_in_vanilla:systems/cursor/click
 
 function spice_in_vanilla:systems/effect_remove
 function spice_in_vanilla:systems/score_reset
+
+function spice_in_vanilla:systems/tamed_ravager

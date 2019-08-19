@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:15b,Duration:1,ShowParticles:0b,ShowIcon:0b,Amplifier:127b}],CustomPotionColor:10823138,ItemID:\"Teleport_Arrow\",HideFlags:32}"
+                            "tag": "{CustomPotionEffects:[{Id:15b,Duration:1,ShowParticles:0b,ShowIcon:0b,Amplifier:126b}],CustomPotionColor:10823138,ItemID:\"Teleport_Arrow\",HideFlags:32}"
                         }
                     ]                    
                 }

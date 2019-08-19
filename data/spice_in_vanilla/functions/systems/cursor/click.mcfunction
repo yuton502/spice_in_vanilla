@@ -1,0 +1,2 @@
+execute as @a[scores={UseCarrotStick=1..},nbt={SelectedItem:{tag:{ItemID:"Cursor"}}}] at @s run function spice_in_vanilla:systems/cursor/run
+execute as @a[scores={UseCarrotStick=1..},nbt={SelectedItem:{tag:{ItemID:"Cursor"}}}] as @e[tag=X] at @s run function spice_in_vanilla:systems/cursor/run

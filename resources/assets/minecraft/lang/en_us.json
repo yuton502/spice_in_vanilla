@@ -151,6 +151,8 @@
 "item.spice_in_vanilla.diamond_hammer" : "§bDiamond Hammer",
 "item.spice_in_vanilla.diamond_excavator" : "§bDiamond Excavator",
 
+"item.spice_in_vanilla.iron_pickaxe_head": "§eIron Pickaxe Head",
+
 "item.spice_in_vanilla.gamemode_switch.to_survival" : "§aTo Survival Mode",
 "item.spice_in_vanilla.gamemode_switch.to_creative" : "§aTo Creative Mode",
 

@@ -11,7 +11,7 @@ execute as @e[type=item,tag=CraftingTable,limit=1] at @s if entity @e[type=item,
 
 #Place Custom Crafting Table
 execute as @e[type=armor_stand,tag=CustomCraftingTable,tag=!Succeed] at @s run setblock ~ ~ ~ dropper[facing=up]{"CustomName":"{\"text\":\"Custom Craft\"}"}
-execute as @e[type=armor_stand,tag=CustomCraftingTable,tag=!Succeed] at @s run summon item ~ ~1 ~ {Tags:["CustomCraftingTable"],Age:-32768s,PickupDelay:-32767s,Glowing:1b,NoGravity:1b,Item:{id:"minecraft:beacon",Count:1b,tag:{ench:[{}]}}}
+execute as @e[type=armor_stand,tag=CustomCraftingTable,tag=!Succeed] at @s run summon item ~ ~1 ~ {Tags:["CustomCraftingTable"],Age:-32768s,PickupDelay:-32767s,Glowing:1b,NoGravity:1b,Item:{id:"minecraft:beacon",Count:1b,tag:{Enchantments:[{}]}}}
 execute as @e[type=armor_stand,tag=CustomCraftingTable,tag=!Succeed] at @s run data merge entity @s {Tags:["CustomCraftingTable","Succeed"]}
 
 #Detect opened GUI of Dropper(Custom Crafting Table)

@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+                "conditions": [
+                  {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "nbt": "{CustomEffects:[\"Grinding\"]}"
+                    }
+                  }
+                ],
+              "name": "minecraft:brick",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Grinded:true}"
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:brick_slab",
+                        "properties": {
+                          "type": "double"
+                        }
+                      }
+                    }
+                  ],
+                  "count": 2
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:brick_slab",
+                      "properties": {
+                        "type": "double"
+                      }
+                    }
+                  ],
+                  "count": 4
+                }
+              ]
+              
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:brick_slab",
+                      "properties": {
+                        "type": "double"
+                      }
+                    }
+                  ],
+                  "count": 2
+                }
+              ],
+              "name": "minecraft:brick_slab"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            }
+          ]
+        }        
+      ]
+    }
+  ]
+}

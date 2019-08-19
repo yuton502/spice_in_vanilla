@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+                "conditions": [
+                  {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "nbt": "{CustomEffects:[\"Auto_Smelting\"]}"
+                    }
+                  }
+                ],
+              "name": "minecraft:stone",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Smelted:true}"
+                }
+              ]
+              
+            },
+            {
+              "type": "minecraft:item",
+                "conditions": [
+                  {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "nbt": "{CustomEffects:[\"Grinding\"]}"
+                    }
+                  }
+                ],
+              "name": "minecraft:sand",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Grinded:true}"
+                }
+              ]
+              
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cobblestone"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

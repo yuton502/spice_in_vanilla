@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ],
+                    "nbt": "{CustomEffects:[\"Auto_Smelting\"]}"
+                  }
+                }
+              ],
+              "name": "minecraft:stone_bricks",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Smelted:true}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:stone"
+            },
+            {
+              "type": "minecraft:item",
+                "conditions": [
+                  {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "nbt": "{CustomEffects:[\"Auto_Smelting\"]}"
+                    }
+                  }
+                ],
+              "name": "minecraft:stone",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Smelted:true}"
+                }
+              ]
+              
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "name": "minecraft:cobblestone"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

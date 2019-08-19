@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+                "conditions": [
+                  {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "nbt": "{CustomEffects:[\"Auto_Smelting\"]}"
+                    }
+                  }
+                ],
+              "name": "minecraft:brown_glazed_terracotta",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Smelted:true}"
+                }
+              ]              
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:brown_terracotta"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

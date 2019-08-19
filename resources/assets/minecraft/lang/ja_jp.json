@@ -150,6 +150,8 @@
 "item.spice_in_vanilla.diamond_hammer" : "§bダイヤのハンマー",
 "item.spice_in_vanilla.diamond_excavator" : "§bダイヤのエクスカベーター",
 
+"item.spice_in_vanilla.iron_pickaxe_head": "§e鉄のツルハシのヘッド",
+
 "item.spice_in_vanilla.gamemode_switch.to_survival" : "§aサバイバルモードへ",
 "item.spice_in_vanilla.gamemode_switch.to_creative" : "§aクリエイティブモードへ",
 

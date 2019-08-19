@@ -20,11 +20,8 @@
                         },
                         {
                             "function": "minecraft:set_lore",
-                            "lore": [
-                                {"translate":"enchantment.spice_in_vanilla.auto_smelting","italic":"false","color":"gray"},
-                                [{"text":"List Number : ","color":"aqua","italic":"false"},{"score":{"objective":"ListNumber","name":"@s"},"color":"gray"}]
-                            ],
-                            "entity": "this"
+                            "lore": [                                       {"translate":"enchantment.spice_in_vanilla.auto_smelting","italic":"false","color":"gray"}
+                            ]
                         }
                     ]                    
                 }

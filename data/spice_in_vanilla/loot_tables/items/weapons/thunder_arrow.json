@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:15b,Duration:4,ShowParticles:0b,ShowIcon:0b,Amplifier:127b}],CustomPotionColor:16777022,ItemID:\"Thunder_Arrow\",HideFlags:32}"
+                            "tag": "{CustomPotionEffects:[{Id:15b,Duration:3,ShowParticles:0b,ShowIcon:0b,Amplifier:127b}],CustomPotionColor:16777022,ItemID:\"Thunder_Arrow\",HideFlags:32}"
                         }
                     ]                    
                 }

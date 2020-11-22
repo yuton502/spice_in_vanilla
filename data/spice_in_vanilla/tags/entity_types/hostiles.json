@@ -1,17 +1,24 @@
 {
     "replace": false,
     "values": [
+        "#minecraft:raiders",
         "minecraft:zombie",
         "minecraft:husk",
+        "minecraft:drowned",
         "minecraft:skeleton",
         "minecraft:stray",
         "minecraft:wither_skeleton",
         "minecraft:creeper",
         "minecraft:spider",
         "minecraft:cave_spider",
+        "minecraft:silverfish",
+        "minecraft:slime",
+        "minecraft:magma_cube",
+        "minecraft:blaze",
         "minecraft:enderman",
+        "minecraft:endermite",
         "minecraft:guardian",
         "minecraft:elder_guardian",
-        "minecraft:ravager"
+        "minecraft:phantom"
     ]
 }

@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomDurability:{Max:750,Value:750},MaterialType:\"Iron\",ToolType:\"Tools\",Lumber:1b}"
+                            "tag": "{CustomDurability:{Max:750,Value:750,PreviousDamage:0},MaterialType:\"Iron\",ToolType:\"Tools\",Lumber:1b}"
                         },
                         {
                             "function": "minecraft:set_attributes",

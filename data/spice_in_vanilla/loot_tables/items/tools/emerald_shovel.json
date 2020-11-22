@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:1,CustomDurability:{Max:1280,Value:1280},Enchantments:[{id:\"minecraft:silk_touch\",lvl:1s}],MaterialType:\"Emerald\",ToolType:\"Tools\"}"
+                            "tag": "{CustomModelData:1,CustomDurability:{Max:1280,Value:1280,PreviousDamage:0},Enchantments:[{id:\"minecraft:silk_touch\",lvl:1s}],MaterialType:\"Emerald\",ToolType:\"Tools\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",

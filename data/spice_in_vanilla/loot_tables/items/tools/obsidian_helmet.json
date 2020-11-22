@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_helmet",
+                    "name": "minecraft:diamond_helmet",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.redstone_helmet"
+                                "translate": "item.spice_in_vanilla.obsidian_helmet"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:3,CustomDurability:{Max:272,Value:272,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Armor\"}"
+                            "tag": "{CustomDurability:{Max:508,Value:508,PreviousDamage:0},MaterialType:\"Obsidian\",ToolType:\"Armor\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",
@@ -27,6 +27,30 @@
                                     "amount": {
                                         "min": 3,
                                         "max": 3
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.movementSpeed",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": -0.05,
+                                        "max": -0.05
+                                    },
+                                    "operation": "multiply_base",
+                                    "slot": [ 
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.knockbackResistance",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 0.15,
+                                        "max": 0.15
                                     },
                                     "operation": "addition",
                                     "slot": [ 
@@ -49,8 +73,8 @@
                                     "attribute": "durability",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": 272,
-                                        "max": 272
+                                        "min": 508,
+                                        "max": 508
                                     },
                                     "operation": "addition",
                                     "slot": [ 

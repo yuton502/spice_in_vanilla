@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomDurability:{Max:960,Value:960},MaterialType:\"Redstone\",ToolType:\"Tools\"}"
+                            "tag": "{CustomModelData:3,CustomDurability:{Max:960,Value:960,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Tools\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",

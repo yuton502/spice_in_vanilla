@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:1,CustomDurability:{Max:1280,Value:1280},MaterialType:\"Emerald\",ToolType:\"Hoe\"}"
+                            "tag": "{CustomModelData:1,CustomDurability:{Max:1280,Value:1280,PreviousDamage:0},MaterialType:\"Emerald\",ToolType:\"Hoe\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",

@@ -7,10 +7,16 @@
                 {
                     "type": "item",
                     "name": "minecraft:bread",
-                    "functions": [                        
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.spice_in_vanilla.chocochip_bread"
+                            }
+                        },                       
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{\"Name\":\"{\\\"translate\\\":\\\"item.spice_in_vanilla.chocochip_bread\\\"}\"},ItemID:\"Chocochip_Bread\",CustomModelData:1}"
+                            "tag": "{ItemID:\"Chocochip_Bread\",CustomModelData:1}"
                         },
                         {
                             "function": "minecraft:set_count",

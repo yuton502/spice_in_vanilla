@@ -6,17 +6,21 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_ingot",
+                    "name": "minecraft:tipped_arrow",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.blaze_ingot"
+                                "translate": "item.spice_in_vanilla.explosion_arrow"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{HideFlags:1,ItemID:\"Blaze_Ingot\",CustomModelData:1,Enchantments:[{}]}"
+                            "tag": "{CustomPotionEffects:[{Id:15b,Duration:2,ShowParticles:0b,ShowIcon:0b,Amplifier:127b}],CustomPotionColor:15204357,ItemID:\"Explosion_Arrow\",HideFlags:32}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 64
                         }
                     ]                    
                 }

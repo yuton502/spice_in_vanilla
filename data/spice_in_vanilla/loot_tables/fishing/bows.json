@@ -1,0 +1,145 @@
+﻿{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "rolls": 1.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_damage",
+                "damage": {
+                  "min": 0.0,
+                  "max": 0.25
+                }
+              },
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 30,
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:bow",
+            "weight": 4
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_damage",
+                "damage": {
+                  "min": 0.0,
+                  "max": 0.25
+                }
+              },
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 30,
+                "treasure": true
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"translate":"enchantment.spice_in_vanilla.torcher","color":"gray","italic":false}
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomEffects:[\"Torcher\"]}"
+  
+              }
+            ],
+            "name": "minecraft:bow"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_damage",
+                "damage": {
+                  "min": 0.0,
+                  "max": 0.25
+                }
+              },
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 30,
+                "treasure": true
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"translate":"enchantment.spice_in_vanilla.explosion","color":"gray","italic":false}
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomEffects:[\"Explosion\"]}"
+  
+              }
+            ],
+            "name": "minecraft:bow"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_damage",
+                "damage": {
+                  "min": 0.0,
+                  "max": 0.25
+                }
+              },
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 30,
+                "treasure": true
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"translate":"enchantment.spice_in_vanilla.thunder","color":"gray","italic":false}
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomEffects:[\"Thunder\"]}"
+  
+              }
+            ],
+            "name": "minecraft:bow"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_damage",
+                "damage": {
+                  "min": 0.0,
+                  "max": 0.25
+                }
+              },
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 30,
+                "treasure": true
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"translate":"enchantment.spice_in_vanilla.teleport","color":"gray","italic":false}
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomEffects:[\"Teleport\"]}"
+  
+              }
+            ],
+            "name": "minecraft:bow"
+          }
+        ]
+      }
+    ]
+  }

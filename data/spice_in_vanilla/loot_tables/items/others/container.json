@@ -1,0 +1,25 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:armor_stand",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"translate": "item.spice_in_vanilla.container"
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{Invisible:1b,NoGravity:1b,Marker:1b,Tags:[\"Container\"]}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

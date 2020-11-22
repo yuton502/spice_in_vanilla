@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_ingot",
-                    "functions": [
+                    "name": "minecraft:beetroot",
+                    "functions": [ 
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.blaze_ingot"
+                                "translate": "item.spice_in_vanilla.polished_seeds"
                             }
-                        },
+                        },                       
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{HideFlags:1,ItemID:\"Blaze_Ingot\",CustomModelData:1,Enchantments:[{}]}"
+                            "tag": "{ItemID:\"Polished_Seeds\",CustomModelData:1}"
                         }
                     ]                    
                 }

@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_pickaxe",
+                    "name": "minecraft:diamond_hoe",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.redstone_pickaxe"
+                                "translate": "item.spice_in_vanilla.shulker_hoe"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:3,CustomDurability:{Max:960,Value:960,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Tools\"}"
+                            "tag": "{CustomDurability:{Max:3124,Value:3124,PreviousDamage:0},MaterialType:\"Shulker\",ToolType:\"Hoe\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",
@@ -25,8 +25,8 @@
                                     "attribute": "generic.attackDamage",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": 6,
-                                        "max": 6
+                                        "min": 1,
+                                        "max": 1
                                     },
                                     "operation": "addition",
                                     "slot": [ 
@@ -37,8 +37,8 @@
                                     "attribute": "generic.attackSpeed",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": -2.8,
-                                        "max": -2.8
+                                        "min": 0,
+                                        "max": 0
                                     },
                                     "operation": "addition",
                                     "slot": [ 
@@ -49,16 +49,15 @@
                                     "attribute": "durability",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": 960,
-                                        "max": 960
+                                        "min": 3124,
+                                        "max": 3124
                                     },
                                     "operation": "addition",
                                     "slot": [ 
                                         "mainhand"
                                     ]
                                 }
-                            ]
-                            
+                            ]   
                         }
                     ]                    
                 }

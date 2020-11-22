@@ -1,4 +1,4 @@
-﻿{
+{
     "type": "minecraft:entity",
     "pools": [
         {
@@ -6,36 +6,44 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_hoe",
+                    "name": "minecraft:fire_charge",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.redstone_hoe"
+                                "translate": "item.spice_in_vanilla.capture_ball"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:3,CustomDurability:{Max:960,Value:960,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Hoe\"}"
+                            "tag": "{ItemID:\"Capture_Ball\",HideFlags:2}"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.spice_in_vanilla.capture_ball.lore","italic":"false","color":"green"}
+                            ]
                         },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "durability",
+                                    "attribute": "generic.attackDamage",
                                     "name": "Spice_in_Vanilla",
-                                    "amount": {
-                                        "min": 960,
-                                        "max": 960
-                                    },
-                                    "operation": "addition",
+                                    "amount": -0.9999999,
+                                    "id": "00000000-0000-0005-0000-000000000005",
+                                    "operation": "multiply_base",
                                     "slot": [ 
                                         "mainhand"
                                     ]
                                 }
                             ]
-                            
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 16
                         }
+
                     ]                    
                 }
             ]

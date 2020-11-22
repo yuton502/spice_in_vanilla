@@ -6,23 +6,23 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_pickaxe",
+                    "name": "minecraft:diamond_leggings",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.redstone_pickaxe"
+                                "translate": "item.spice_in_vanilla.obsidian_leggings"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:3,CustomDurability:{Max:960,Value:960,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Tools\"}"
+                            "tag": "{CustomDurability:{Max:693,Value:693,PreviousDamage:0},MaterialType:\"Obsidian\",ToolType:\"Armor\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.attackDamage",
+                                    "attribute": "generic.armor",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
                                         "min": 6,
@@ -30,31 +30,55 @@
                                     },
                                     "operation": "addition",
                                     "slot": [ 
-                                        "mainhand"
+                                        "legs"
                                     ]
                                 },
                                 {
-                                    "attribute": "generic.attackSpeed",
+                                    "attribute": "generic.movementSpeed",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": -2.8,
-                                        "max": -2.8
+                                        "min": -0.1,
+                                        "max": -0.1
+                                    },
+                                    "operation": "multiply_base",
+                                    "slot": [ 
+                                        "legs"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.knockbackResistance",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 0.3,
+                                        "max": 0.3
                                     },
                                     "operation": "addition",
                                     "slot": [ 
-                                        "mainhand"
+                                        "legs"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.armorToughness",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 3,
+                                        "max": 3
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "legs"
                                     ]
                                 },
                                 {
                                     "attribute": "durability",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": 960,
-                                        "max": 960
+                                        "min": 693,
+                                        "max": 693
                                     },
                                     "operation": "addition",
                                     "slot": [ 
-                                        "mainhand"
+                                        "legs"
                                     ]
                                 }
                             ]

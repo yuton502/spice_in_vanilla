@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{MaterialType:\"Redstone\",ToolType:\"Armor\"}"
+                            "tag": "{CustomModelData:3,CustomDurability:{Max:321,Value:321,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Armor\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",
@@ -39,6 +39,18 @@
                                     "amount": {
                                         "min": 3,
                                         "max": 3
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "feet"
+                                    ]
+                                },
+                                {
+                                    "attribute": "durability",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 321,
+                                        "max": 321
                                     },
                                     "operation": "addition",
                                     "slot": [ 

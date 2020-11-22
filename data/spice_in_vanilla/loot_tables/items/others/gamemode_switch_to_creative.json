@@ -1,4 +1,4 @@
-﻿{
+{
     "type": "minecraft:entity",
     "pools": [
         {
@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_ingot",
+                    "name": "minecraft:purple_dye",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.blaze_ingot"
+                                "translate": "item.spice_in_vanilla.gamemode_switch.to_creative"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{HideFlags:1,ItemID:\"Blaze_Ingot\",CustomModelData:1,Enchantments:[{}]}"
+                            "tag": "{Gamemode:\"Creative\"}"
                         }
                     ]                    
                 }

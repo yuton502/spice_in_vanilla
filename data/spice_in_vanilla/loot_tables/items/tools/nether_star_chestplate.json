@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:iron_chestplate",
+                    "name": "minecraft:diamond_chestplate",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.redstone_chestplate"
+                                "translate": "item.spice_in_vanilla.nether_star_chestplate"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:3,CustomDurability:{Max:396,Value:396,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Armor\"}"
+                            "tag": "{Unbreakable:1b,MaterialType:\"Nether_Star\",ToolType:\"Armor\"}"
                         },
                         {
                             "function": "minecraft:set_attributes",
@@ -34,11 +34,23 @@
                                     ]
                                 },
                                 {
-                                    "attribute": "generic.armorToughness",
+                                    "attribute": "generic.movementSpeed",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": 3,
-                                        "max": 3
+                                        "min": 0.40,
+                                        "max": 0.40
+                                    },
+                                    "operation": "multiply_base",
+                                    "slot": [ 
+                                        "chest"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.knockbackResistance",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 0.40,
+                                        "max": 0.40
                                     },
                                     "operation": "addition",
                                     "slot": [ 
@@ -46,11 +58,23 @@
                                     ]
                                 },
                                 {
-                                    "attribute": "durability",
+                                    "attribute": "generic.maxHealth",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
-                                        "min": 396,
-                                        "max": 396
+                                        "min": 8,
+                                        "max": 8
+                                    },
+                                    "operation": "addition",
+                                    "slot": [ 
+                                        "chest"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.armorToughness",
+                                    "name": "Spice_in_Vanilla",
+                                    "amount": {
+                                        "min": 5,
+                                        "max": 5
                                     },
                                     "operation": "addition",
                                     "slot": [ 
@@ -58,7 +82,6 @@
                                     ]
                                 }
                             ]
-                            
                         }
                     ]                    
                 }

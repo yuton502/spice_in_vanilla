@@ -11,18 +11,36 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.spice_in_vanilla.redstone_pickaxe"
+                                "translate": "item.spice_in_vanilla.redstone_hammer"
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:3,CustomDurability:{Max:960,Value:960,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Tools\"}"
+                            "tag": "{CustomModelData:4,CustomDurability:{Max:2880,Value:2880,PreviousDamage:0},MaterialType:\"Redstone\",ToolType:\"Tools\",Hammer:1b}"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                                "lore": [
+                                    {
+                                        "italic": false,
+                                        "color": "gray",
+                                        "extra": [
+                                        {
+                                            "italic": false,
+                                            "color": "gray",
+                                            "text": "2880"
+                                        }
+                                    ],
+                                    "translate":"item.spice_in_vanilla.durability"
+                                    }
+                                ]
                         },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
+                                
                                 {
-                                    "attribute": "generic.attackDamage",
+                                    "attribute": "generic.attack_damage",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
                                         "min": 6,
@@ -34,23 +52,11 @@
                                     ]
                                 },
                                 {
-                                    "attribute": "generic.attackSpeed",
+                                    "attribute": "generic.attack_speed",
                                     "name": "Spice_in_Vanilla",
                                     "amount": {
                                         "min": -2.8,
                                         "max": -2.8
-                                    },
-                                    "operation": "addition",
-                                    "slot": [ 
-                                        "mainhand"
-                                    ]
-                                },
-                                {
-                                    "attribute": "durability",
-                                    "name": "Spice_in_Vanilla",
-                                    "amount": {
-                                        "min": 960,
-                                        "max": 960
                                     },
                                     "operation": "addition",
                                     "slot": [ 

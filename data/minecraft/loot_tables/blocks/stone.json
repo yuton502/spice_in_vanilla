@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "minecraft:stone_bricks",
+              "name": "minecraft:smooth_stone",
               "functions": [
                 {
                   "function": "minecraft:set_nbt",

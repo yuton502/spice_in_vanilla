@@ -9,6 +9,24 @@
           "children": [
             {
               "type": "minecraft:item",
+                "conditions": [
+                  {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "nbt": "{CustomEffects:[\"Grinding\"]}"
+                    }
+                  }
+                ],
+              "name": "minecraft:flint",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Grinded:true}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",

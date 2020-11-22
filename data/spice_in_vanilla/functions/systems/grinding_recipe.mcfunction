@@ -38,7 +38,7 @@ execute as @s at @s as @e[type=item,tag=!Grinded,distance=..5,nbt={Item:{id:"min
 execute as @s at @s as @e[type=item,tag=!Grinded,distance=..5,nbt={Item:{id:"minecraft:polished_granite",Count:1b},Age:1s}] run data merge entity @s {Item:{id:"minecraft:granite"},Tags:[GrindItem,Grinded]}
 
 #grinding recipe : diodite
-execute as @s at @s as @e[type=item,tag=!Grinded,distance=..5,nbt={Item:{id:"minecraft:polished_diodite",Count:1b},Age:1s}] run data merge entity @s {Item:{id:"minecraft:diodite"},Tags:[GrindItem,Grinded]}
+execute as @s at @s as @e[type=item,tag=!Grinded,distance=..5,nbt={Item:{id:"minecraft:polished_diorite",Count:1b},Age:1s}] run data merge entity @s {Item:{id:"minecraft:diodite"},Tags:[GrindItem,Grinded]}
 
 #grinding recipe : andesite
 execute as @s at @s as @e[type=item,tag=!Grinded,distance=..5,nbt={Item:{id:"minecraft:polished_andesite",Count:1b,Damage:6s},Age:1s}] run data merge entity @s {Item:{id:"minecraft:andesite"},Tags:[GrindItem,Grinded]}

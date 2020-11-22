@@ -1,1 +1,1 @@
-execute as @a[nbt={SelectedItem:{tag:{CustomEffects:["Grinding"]}}},tag=UseTools] run function spice_in_vanilla:systems/grinding_effect
+execute as @a[tag=UseTools,predicate=spice_in_vanilla:have_grinding] run function spice_in_vanilla:systems/grinding_effect

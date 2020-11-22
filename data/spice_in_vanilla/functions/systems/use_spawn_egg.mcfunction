@@ -1,0 +1,5 @@
+execute as @a unless entity @s[scores={UseBatSE=..0,UseBeeSE=..0,UseBlazeSE=..0,UseCatSE=..0,UseCaveSpiderSE=..0,UseChickenSE=..0,UseCodSE=..0,UseCowSE=..0,UseCreeperSE=..0,UseDolphinSE=..0,UsedonkeySE=..0,UseDrownedSE=..0,UseEGuardianSE=..0,UseEndermanSE=..0,UseEndermiteSE=..0,UseEvokerSE=..0,UseFoxSE=..0,UseGhastSE=..0,UseGuardianSE=..0,UseHorseSE=..0,UseHuskSE=..0,UseLlamaSE=..0,UseMagmaCubeSE=..0,UseMooshroomSE=..0,UseOcelotSE=..0,UsePandaSE=..0,UseParrotSE=..0,UsePhantomSE=..0,UsePigSE=..0,UsePillagerSE=..0,UsePolarBearSE=..0,UseRabbitSE=..0,UsePufferfishSE=..0,UseRavagerSE=..0,UseSheepSE=..0,UseSalmonSE=..0,UseMuleSE=..0,UseSilverfishSE=..0,UseSkeletonSE=..0,UseSHorseSE=..0,UseSlimeSE=..0,UseSpiderSE=..0,UseSquidSE=..0,UseStraySE=..0,UseTraderLlamaSE=..0,UseTFishSE=..0,UseTurtleSE=..0,UseVexSE=..0,UseVillagerSE=..0,UseVindicatorSE=..0,UseWTraderSE=..0,UseWitchSE=..0,UseWSkeletonSE=..0,UseWolfSE=..0,UseZombieSE=..0,UseZombieHorseSE=..0,UseZVillagerSE=..0}] run tag @s add UseSpawnEgg
+
+
+execute as @a[tag=UseSpawnEgg] run function spice_in_vanilla:systems/use_spawn_egg_reset
+

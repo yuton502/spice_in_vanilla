@@ -1,1 +1,1 @@
-execute as @a[nbt={SelectedItem:{tag:{CustomEffects:["Auto_Smelting"]}}},tag=UseTools] run function spice_in_vanilla:systems/smelting_effect
+execute as @a[tag=UseTools,predicate=spice_in_vanilla:have_auto_smelting] run function spice_in_vanilla:systems/smelting_effect

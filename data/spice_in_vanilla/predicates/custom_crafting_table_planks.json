@@ -1,0 +1,52 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+      {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+              "type": "minecraft:item",
+              "nbt": "{Item:{id:\"minecraft:oak_planks\",Count:4b}}"
+          }
+      },
+      {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+              "type": "minecraft:item",
+              "nbt": "{Item:{id:\"minecraft:birch_planks\",Count:4b}}"
+          }
+      },      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type": "minecraft:item",
+            "nbt": "{Item:{id:\"minecraft:spruce_planks\",Count:4b}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type": "minecraft:item",
+            "nbt": "{Item:{id:\"minecraft:jungle_planks\",Count:4b}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type": "minecraft:item",
+            "nbt": "{Item:{id:\"minecraft:acacia_planks\",Count:4b}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type": "minecraft:item",
+            "nbt": "{Item:{id:\"minecraft:dark_oak_planks\",Count:4b}}"
+        }
+    }
+  ]
+}

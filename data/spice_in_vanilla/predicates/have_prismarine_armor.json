@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head": {
+				"nbt": "{MaterialType:\"Prismarine\",ToolType:\"Armor\"}"
+			},
+			"chest": {
+				"nbt": "{MaterialType:\"Prismarine\",ToolType:\"Armor\"}"
+			},
+			"legs": {
+				"nbt": "{MaterialType:\"Prismarine\",ToolType:\"Armor\"}"
+			},
+			"feet": {
+				"nbt": "{MaterialType:\"Prismarine\",ToolType:\"Armor\"}"
+			}
+		}
+	}
+}

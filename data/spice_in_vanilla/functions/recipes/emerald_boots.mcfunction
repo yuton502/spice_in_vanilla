@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:emerald",Slot:2b},{id:"minecraft:emerald",Slot:4b},{id:"minecraft:emerald",Slot:11b},{id:"minecraft:emerald",Slot:13b}]} unless data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:20b}] unless data block ~ ~ ~ Items[{Slot:21b}] unless data block ~ ~ ~ Items[{Slot:22b}] store success score @s SuccessCount run loot replace block ~ ~ ~ container.16 loot spice_in_vanilla:items/tools/emerald_boots
+tag @s[scores={SuccessCount=1..}] add FoundRecipe
+scoreboard players set @s SuccessCount 0

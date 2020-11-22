@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:iron_ingot",Slot:2b,tag:{ItemID:"Blaze_Ingot"}},{id:"minecraft:iron_ingot",Slot:3b,tag:{ItemID:"Blaze_Ingot"}},{id:"minecraft:iron_ingot",Slot:4b,tag:{ItemID:"Blaze_Ingot"}},{id:"minecraft:iron_ingot",Slot:11b,tag:{ItemID:"Blaze_Ingot"}},{id:"minecraft:iron_ingot",Slot:13b,tag:{ItemID:"Blaze_Ingot"}}]} unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:20b}] unless data block ~ ~ ~ Items[{Slot:21b}] unless data block ~ ~ ~ Items[{Slot:22b}] store success score @s SuccessCount run loot replace block ~ ~ ~ container.16 loot spice_in_vanilla:items/tools/blaze_helmet
+tag @s[scores={SuccessCount=1..}] add FoundRecipe
+scoreboard players set @s SuccessCount 0

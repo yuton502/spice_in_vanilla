@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:obsidian",Slot:2b},{id:"minecraft:obsidian",Slot:3b},{id:"minecraft:obsidian",Slot:4b},{id:"minecraft:obsidian",Slot:11b},{id:"minecraft:obsidian",Slot:13b},{id:"minecraft:obsidian",Slot:20b},{id:"minecraft:obsidian",Slot:22b}]} unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:21b}] store success score @s SuccessCount run loot replace block ~ ~ ~ container.16 loot spice_in_vanilla:items/tools/obsidian_leggings
+tag @s[scores={SuccessCount=1..}] add FoundRecipe
+scoreboard players set @s SuccessCount 0

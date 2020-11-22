@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ barrel{Items:[{id:"minecraft:redstone",Slot:2b,tag:{ItemID:"Redstone_Chunk"}},{id:"minecraft:redstone",Slot:4b,tag:{ItemID:"Redstone_Chunk"}},{id:"minecraft:redstone",Slot:11b,tag:{ItemID:"Redstone_Chunk"}},{id:"minecraft:redstone",Slot:13b,tag:{ItemID:"Redstone_Chunk"}}]} unless data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:20b}] unless data block ~ ~ ~ Items[{Slot:21b}] unless data block ~ ~ ~ Items[{Slot:22b}] store success score @s SuccessCount run loot replace block ~ ~ ~ container.16 loot spice_in_vanilla:items/tools/redstone_boots
+tag @s[scores={SuccessCount=1..}] add FoundRecipe
+scoreboard players set @s SuccessCount 0

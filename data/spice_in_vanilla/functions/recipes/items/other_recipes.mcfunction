@@ -1,2 +1,13 @@
 execute as @a[scores={SearchDropper=1..}] at @s as @e[type=armor_stand,tag=CustomCraftingTable,limit=1,distance=..5,sort=nearest] at @s if block ~ ~ ~ dropper[facing=up]{Items:[{id:"minecraft:iron_ingot",Count:1b,Slot:0b},{id:"minecraft:diamond",Count:1b,Slot:4b},{id:"minecraft:redstone",Count:1b,Slot:3b},{id:"minecraft:redstone",Count:1b,Slot:5b},{id:"minecraft:redstone",Count:1b,Slot:6b},{id:"minecraft:redstone",Count:1b,Slot:7b},{id:"minecraft:redstone",Count:1b,Slot:8b}]} store success score @s SuccessCount run data merge block ~ ~ ~ {Items:[{id:"minecraft:carrot_on_a_stick",Slot:4b,Count:1b,tag:{display:{"Name":"{\"translate\":\"item.spice_in_vanilla.ore_detector\"}"},ItemID:"Ore_Detector",Damage:1s,Unbreakable:1b,HideFlags:6}}]}
 tag @e[type=armor_stand,tag=CustomCraftingTable,scores={SuccessCount=1..}] add Success
+
+
+execute as @s at @s as @e[type=armor_stand,tag=CustomCraftingTable,limit=1,distance=..5,sort=nearest] at @s if block ~ ~ ~ dropper[facing=up]{Items:[{id:"minecraft:string",Count:1b,Slot:0b},{id:"minecraft:iron_ingot",Count:1b,Slot:1b},{id:"minecraft:string",Count:1b,Slot:2b},{id:"minecraft:iron_ingot",Count:1b,Slot:3b},{id:"minecraft:egg",Count:1b,Slot:4b},{id:"minecraft:iron_ingot",Count:1b,Slot:5b},{id:"minecraft:string",Count:1b,Slot:6b},{id:"minecraft:iron_ingot",Count:1b,Slot:7b},{id:"minecraft:string",Count:1b,Slot:8b}]} store success score @s SuccessCount run data merge block ~ ~ ~ {Items:[]}
+execute as @e[type=armor_stand,tag=CustomCraftingTable,scores={SuccessCount=1..}] at @s run loot replace block ~ ~ ~ container.4 loot spice_in_vanilla:items/others/capture_ball
+execute as @e[type=armor_stand,tag=CustomCraftingTable,scores={SuccessCount=1..}] run function spice_in_vanilla:recipes/succeed_command
+
+execute as @s at @s as @e[type=armor_stand,tag=CustomCraftingTable,limit=1,distance=..5,sort=nearest] at @s if block ~ ~ ~ dropper[facing=up]{Items:[{id:"minecraft:string",Count:16b,Slot:0b},{id:"minecraft:iron_ingot",Count:16b,Slot:1b},{id:"minecraft:string",Count:16b,Slot:2b},{id:"minecraft:iron_ingot",Count:16b,Slot:3b},{id:"minecraft:egg",Count:16b,Slot:4b},{id:"minecraft:iron_ingot",Count:16b,Slot:5b},{id:"minecraft:string",Count:16b,Slot:6b},{id:"minecraft:iron_ingot",Count:16b,Slot:7b},{id:"minecraft:string",Count:16b,Slot:8b}]} store success score @s SuccessCount run data merge block ~ ~ ~ {Items:[]}
+execute as @e[type=armor_stand,tag=CustomCraftingTable,scores={SuccessCount=1..}] at @s run loot replace block ~ ~ ~ container.4 loot spice_in_vanilla:items/others/capture_ball_16
+execute as @e[type=armor_stand,tag=CustomCraftingTable,scores={SuccessCount=1..}] run function spice_in_vanilla:recipes/succeed_command
+
+

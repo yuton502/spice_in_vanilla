@@ -1,0 +1,1 @@
+function spice_in_vanilla:recipes/drop_recipes/enchantments/faster

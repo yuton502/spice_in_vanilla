@@ -11,7 +11,5 @@ execute as @a[tag=Hammer,tag=UseTools,scores={CoolTime=..2}] at @s run tag @e[ty
 execute as @a[tag=Hammer,tag=UseTools,scores={CoolTime=2..2},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] at @s run function spice_in_vanilla:items/hammer/effect_diamond
 execute as @a[tag=Hammer,tag=UseTools,scores={CoolTime=2..2},nbt=!{SelectedItem:{id:"minecraft:diamond_pickaxe"}}] at @s run function spice_in_vanilla:items/hammer/effect_iron
 
-tellraw @a {"score":{"objective": "BreakBlocks", "name": "#Sum"}}
-
 execute if score #Sum BreakBlocks matches 1.. as @a[tag=Hammer,tag=UseTools,scores={CoolTime=2..2}] run function spice_in_vanilla:items/hammer/durability_minus
 
